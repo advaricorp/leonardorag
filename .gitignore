@@ -1,7 +1,25 @@
-myenv/
-models/
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.class
+myenv/
+
+# Models
+models/
+*.gguf
+*.safetensors
+*.bin
+
+# Environment
 .env
+.venv
+env/
+venv/
+
+# Logs
 *.log
-.DS_Store
+logs/
+
+# IDE
+.vscode/
+.idea/
