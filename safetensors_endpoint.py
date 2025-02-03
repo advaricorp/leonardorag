@@ -17,7 +17,11 @@ app = FastAPI()
 # Enable CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://143.198.37.9:5173"],  # Add frontend origin
+    allow_origins=[
+        "http://localhost:5173",  # Local development
+        "https://143.198.37.9:5173",  # Frontend
+        "https://a526-142-198-80-106.ngrok-free.app"  # ngrok URL
+    ],
     allow_credentials=True,
     allow_methods=["*"],  # Allow all methods (GET, POST, etc.)
     allow_headers=["*"],  # Allow all headers
